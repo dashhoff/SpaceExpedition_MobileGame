@@ -11,14 +11,14 @@ GameObject:
   - component: {fileID: 295671249050460544}
   - component: {fileID: 6114850143755968948}
   - component: {fileID: 496607511985803867}
-  - component: {fileID: 2170975525109962573}
   - component: {fileID: 8831833824233802130}
+  - component: {fileID: 7849266598117519751}
   m_Layer: 0
   m_Name: FuelResource
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &295671249050460544
 Transform:
@@ -42,7 +42,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8076003180287299358}
-  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: -9111446733670104075, guid: cc8ed6c5d7da00b42a45257335126834, type: 3}
 --- !u!23 &496607511985803867
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -66,7 +66,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: cc72282d7ff397e47a46ea6ad95b32c6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -88,8 +88,21 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &2170975525109962573
-CapsuleCollider:
+--- !u!114 &8831833824233802130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8076003180287299358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f146aadbd7ce6da4c839cb20405a0958, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _fuelAmount: 5
+--- !u!65 &7849266598117519751
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -106,21 +119,6 @@ CapsuleCollider:
   m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &8831833824233802130
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8076003180287299358}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f146aadbd7ce6da4c839cb20405a0958, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _fuelAmount: 5
+  serializedVersion: 3
+  m_Size: {x: 2, y: 5, z: 2.0000002}
+  m_Center: {x: 0, y: 0.5, z: 0}

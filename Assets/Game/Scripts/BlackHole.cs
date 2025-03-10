@@ -19,7 +19,7 @@ public class BlackHole : MonoBehaviour
     {
         _canTeleport = false;
 
-        Vector3 offset = new Vector3(Random.Range(-10, 10), Random.Range(-10, 10), Random.Range(-10, 10));
+        Vector3 offset = new Vector3(Random.Range(-25, 25), Random.Range(-25, 25), Random.Range(-25, 25));
         player.position = _targetBlackHole.transform.position + offset;
 
         _targetBlackHole.DisableTeleport();
