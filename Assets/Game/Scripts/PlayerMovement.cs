@@ -33,7 +33,11 @@ public class PlayerMovement : MonoBehaviour
 
     private void HandleRotation()
     {
+        /*float rotationInput = _rightJoystick.Direction.x; 
+        //_rb.MoveRotation(_rb.rotation * Quaternion.Euler(0, rotationInput * _rotationSpeed, 0));
+        transform.Rotate(Vector3.up * (rotationInput * _rotationSpeed * Time.deltaTime));*/
+
         float rotationInput = _rightJoystick.Direction.x;
-        transform.Rotate(Vector3.up * (rotationInput * _rotationSpeed * Time.deltaTime));
+        _rb.AddTorque(Vector3.up * (rotationInput * _rotationSpeed), ForceMode.Acceleration);
     }
 }

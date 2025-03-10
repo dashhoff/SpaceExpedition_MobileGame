@@ -47,9 +47,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speed: 10
-  _chaseSpeed: 1.25
-  _detectionRadius: 20
-  _viewDistance: 15
+  _chaseSpeed: 3
+  _detectionRadius: 50
+  _viewDistance: 50
   _player: {fileID: 0}
   _obstacleMask:
     serializedVersion: 2
