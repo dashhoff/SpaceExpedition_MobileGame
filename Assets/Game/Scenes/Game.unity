@@ -2796,6 +2796,72 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
+--- !u!1001 &933453751
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1408814060}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: ea35d3ae51f4f2744b1adb20153ebb8b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ea35d3ae51f4f2744b1adb20153ebb8b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ea35d3ae51f4f2744b1adb20153ebb8b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ea35d3ae51f4f2744b1adb20153ebb8b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ea35d3ae51f4f2744b1adb20153ebb8b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ea35d3ae51f4f2744b1adb20153ebb8b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ea35d3ae51f4f2744b1adb20153ebb8b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ea35d3ae51f4f2744b1adb20153ebb8b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ea35d3ae51f4f2744b1adb20153ebb8b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ea35d3ae51f4f2744b1adb20153ebb8b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ea35d3ae51f4f2744b1adb20153ebb8b, type: 3}
+      propertyPath: m_Name
+      value: Astronaut_v2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: ea35d3ae51f4f2744b1adb20153ebb8b, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 479c9f2c82789654ca1e49263370a7c8, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ea35d3ae51f4f2744b1adb20153ebb8b, type: 3}
+--- !u!4 &933453752 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ea35d3ae51f4f2744b1adb20153ebb8b, type: 3}
+  m_PrefabInstance: {fileID: 933453751}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &937085982
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4308,6 +4374,7 @@ GameObject:
   - component: {fileID: 1408814063}
   - component: {fileID: 1408814062}
   - component: {fileID: 1408814064}
+  - component: {fileID: 1408814066}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -4355,6 +4422,7 @@ Transform:
   - {fileID: 9208244860848912848}
   - {fileID: 1453960567}
   - {fileID: 579011508}
+  - {fileID: 933453752}
   m_Father: {fileID: 1368274290}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &1408814061
@@ -4458,6 +4526,28 @@ MonoBehaviour:
   _rb: {fileID: 1408814061}
   _victory: 0
   _defeat: 0
+--- !u!95 &1408814066
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1408814056}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 479c9f2c82789654ca1e49263370a7c8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!224 &1426206596 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8136141719737743477, guid: cc6dc5687fdff8b459e2d7cfa0c4b8fe, type: 3}
